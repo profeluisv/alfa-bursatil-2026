@@ -5,11 +5,11 @@ export function Navbar() {
     <nav className="fixed top-14 left-0 right-0 z-50 px-6 py-4 bg-black/50 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          {/* Logo incorporado manteniendo el espaciado original */}
+          {/* Logo aumentado a w-12 h-12 para mejor visibilidad */}
           <img 
             src="/logo-alfa.png" 
             alt="Alfa Bursátil Logo" 
-            className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(36,161,222,0.4)]" 
+            className="w-12 h-12 object-contain drop-shadow-[0_0_8px_rgba(36,161,222,0.4)]" 
           />
           <h1 className="text-2xl font-bold text-white brand-shadow tracking-tight">
             Alfa Bursátil
