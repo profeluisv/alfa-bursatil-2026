@@ -1,9 +1,16 @@
 import { ArrowUpRight, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export function HeroSection() {
   return (
     <section className="pt-32 pb-24 px-6">
-      <div className="max-w-7xl mx-auto">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto"
+      >
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 mb-8 bg-emerald-400/10 px-4 py-2 rounded-full border border-emerald-400/30 animate-pulse">
             <Zap className="w-4 h-4 text-emerald-400" />
@@ -60,7 +67,7 @@ export function HeroSection() {
             <p className="text-slate-400 text-sm">Bolsa de Valores de Caracas</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
