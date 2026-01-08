@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export function PremiumSection() {
   const benefits = [
@@ -10,8 +11,14 @@ export function PremiumSection() {
 
   return (
     <section className="py-20 px-6">
-      <div className="max-w-3xl mx-auto">
-        <div className="glassmorphism rounded-3xl p-10 md:p-16">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl mx-auto"
+      >
+        <div className="glassmorphism rounded-3xl p-10 md:p-16 border border-white/10">
           <div className="text-center mb-10">
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-3">
               Consultoría Premium
@@ -44,7 +51,7 @@ export function PremiumSection() {
             Solicitar Consultoría Ahora
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
