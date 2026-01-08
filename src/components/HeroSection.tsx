@@ -17,7 +17,8 @@ export function HeroSection() {
             <span className="text-emerald-400 text-xs font-bold tracking-wide">+499.3% Retorno en USD (Anual)</span>
           </div>
 
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight">
+          {/* Título reducido ligeramente para mejor equilibrio visual */}
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
             Información en Tiempo Real del <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#24a1de] via-[#2dd4bf] to-[#10b981]">Mercado de Valores</span> de Venezuela
           </h2>
           <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
